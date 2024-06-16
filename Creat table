@@ -1,0 +1,10 @@
+USE Minions 
+CREATE TABLE People(
+ID SMALLINT PRIMARY KEY NOT NULL,
+[Name] NVARCHAR (200) NOT NULL,
+Picture VARBINARY (MAX)
+CHECK(DATALENGTH(Picture) <=2),
+Gender CHAR(1),
+Birthday DATE,
+Biography NVARCHAR(MAX),
+)
